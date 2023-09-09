@@ -60,7 +60,7 @@ const Page = () => {
             <InputBox
               label="To"
               amount={convertedAmount}
-              currencyOptions={options}
+              currencyOptions={options.filter((currency)=>currency!==from)}
               onCurrencyChange={(currency) => setTo(currency)}
               selectCurrency={to}
             />
